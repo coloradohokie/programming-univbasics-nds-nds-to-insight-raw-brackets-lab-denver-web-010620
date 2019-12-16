@@ -44,5 +44,6 @@ def directors_totals(nds)
   #nil
 end
 
+directors_totals(directors_database)
 
 #pp directors_database
