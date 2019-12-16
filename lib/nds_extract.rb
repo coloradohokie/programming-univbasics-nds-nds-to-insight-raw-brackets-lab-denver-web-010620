@@ -12,7 +12,7 @@ def directors_totals(nds)
   #data structure is AoHoAoH
   
   
-
+  result = {}
   director_count = 0 #list of directors; first Array
   
 
