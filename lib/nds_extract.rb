@@ -25,7 +25,7 @@ def directors_totals(nds)
       gross += nds[director_count][:movies][movie_count][:worldwide_gross]
       movie_count += 1
     end
-    result = {director => gross}
+    result[director] = gross
     puts director_count
     director_count += 1
   end
