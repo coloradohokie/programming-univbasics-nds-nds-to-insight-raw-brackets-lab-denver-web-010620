@@ -8,15 +8,25 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
+  #
+  # Use loops, variables and the accessing method, [], to loop through the NDS
+  # and total up all the
+  # ...
+  # ...
+  # ...
+  #
+  #result = {}
+  #
+  # Be sure to return the result at the end!
+  #nil
+  
   
   #data structure is AoHoAoH
   
   
   result = {}
   director_count = 0 #list of directors; first Array
-  
-
-
+  puts nds[director_count].length
   while director_count < nds[director_count].length do
     director = nds[director_count][:name]
     gross = 0    
@@ -29,20 +39,8 @@ def directors_totals(nds)
     puts director_count
     director_count += 1
   end
-  
   puts result
-  #result = {}
   return result
-  #
-  # Use loops, variables and the accessing method, [], to loop through the NDS
-  # and total up all the
-  # ...
-  # ...
-  # ...
-  #
-  #
-  # Be sure to return the result at the end!
-  #nil
 end
 
 directors_totals(directors_database)
