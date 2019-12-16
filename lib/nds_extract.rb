@@ -27,7 +27,7 @@ def directors_totals(nds)
   result = {}
   director_count = 0 #list of directors; first Array
   puts nds[director_count].length
-  while director_count < nds[director_count].length do
+  while director_count < nds.length do
     director = nds[director_count][:name]
     gross = 0    
     movie_count = 0 #list of each movies for each director; second array
