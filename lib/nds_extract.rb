@@ -47,4 +47,4 @@ end
 
 directors_totals(directors_database)
 
-#pp directors_database
+pp directors_database
