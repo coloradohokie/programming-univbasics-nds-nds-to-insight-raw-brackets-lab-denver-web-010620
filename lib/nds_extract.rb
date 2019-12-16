@@ -9,7 +9,14 @@ def directors_totals(nds)
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   
-  gross = nds[director][:movies][movie_count][:gross]
+  #data structure is AoHoAoH
+  
+  
+  
+  director = 0 #list of directors; first
+  movie_count = 0
+  
+  gross = gross + nds[director][:movies][movie_count][:worldwide_gross]
   
   
   
