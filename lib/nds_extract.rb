@@ -12,20 +12,25 @@ def directors_totals(nds)
   #data structure is AoHoAoH
   
   
-  
+
   director_count = 0 #list of directors; first Array
-  movie_count = 0
+  movie_count = 0 #list of each movies for each director; second array
   gross = 0
-  
+
   while director_count < nds[director_count].length do
-    director_name = nds[director_count][:name]
-    while movie_count < nds
-  gross = gross + nds[director_count][:movies][movie_count][:worldwide_gross]
+    director = nds[director_count][:name]
+    
+    while movie_count < nds[director_count][:movies][movie_count].length do
+      gross += nds[director_count][:movies][movie_count][:worldwide_gross]
+      movie_count += 1
+    end
+    result[:director] = gross
+    director_count += 1
+  end
   
-  
-  
-  result = {
-  }
+  pp result
+  #result = {}
+  return result
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
@@ -35,7 +40,7 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  nil
+  #nil
 end
 
 
