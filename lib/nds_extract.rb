@@ -44,4 +44,4 @@ def directors_totals(nds)
 end
 
 
-pp directors_database
+#pp directors_database
