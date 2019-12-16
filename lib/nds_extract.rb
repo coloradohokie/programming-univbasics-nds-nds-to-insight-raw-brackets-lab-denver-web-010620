@@ -38,10 +38,10 @@ def directors_totals(nds)
     puts director_count
     director_count += 1
   end
-  puts result
+#  puts result
   return result
 end
 
-directors_totals(directors_database)
+#directors_totals(directors_database)
 
 #pp directors_database
