@@ -28,7 +28,7 @@ def directors_totals(nds)
     director_count += 1
   end
   
-  pp result
+  puts result
   #result = {}
   return result
   #
